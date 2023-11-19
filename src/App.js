@@ -1,6 +1,8 @@
 import React, {useEffect,useState} from 'react'
 import SearchBar from './components/SearchBar';
 import AristFetcher from './components/fetchArtist';
+import SetListList from './components/SetListItem';
+import FetchSetList from './components/fetchSetlist';
 
 
 const App = () => {
@@ -13,7 +15,7 @@ const App = () => {
     <div>
         <h1>Artist Information</h1>
         <SearchBar onSearch={handleSearch}/>
-        <AristFetcher searchTerm={searchTerm}/>
+        <FetchSetList searchTerm ={searchTerm}/>
     </div>
   )
 
